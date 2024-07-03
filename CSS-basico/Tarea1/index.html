@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tarea 1 CSS:Básico</title>
+</head>
+
+<body>
+    <main id="principal">
+        <div class="division divti">
+            <h1 class="titulo">Pseudo-Clases</h1>
+        </div>
+        <section class="division first">
+            <h3 class="pseudo1">Elemento:first-of-type</h3>
+            <p class="definicion">
+                La pseudo-clase <strong>first-of-type</strong> de CSS representa el
+                primer elemento de su tipo dentro de un grupo de elementos hermanos (o
+                del mismo tipo).
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                .ejemplo1 a:first-of-type{<br />
+                color: white;<br />
+                font-family: Arial, Helvetica, sans-serif;<br />
+                background-color: gray;<br />
+                border-radius: 5px;<br />
+                padding: 2px 0;<br />
+                width: 30vw;<br />
+                margin: 0 auto;<br />
+                }
+            </p>
+            <div class="ejemplos ejemplo1">
+                <h4>Ejemplo:</h4>
+                <a href="#">Enlace con estilos</a>
+                <a href="#">Enlace 2</a>
+                <a href="#">Enlace 3</a>
+            </div>
+        </section>
+
+        <section class="division second">
+            <h3 class="pseudo2">Elemento:focus</h3>
+            <p class="definicion">
+                La pseudo-clase <strong>focus</strong> crea un foco en un elemento,
+                que generalmente es la entrada de un formulario, y se activa al dar
+                click o tocar el elemento.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                .ejemplo2 .amarillo:focus{<br>
+                color: blue;<br>
+                background-color: yellow;<br>
+                font-weight: 400;<br>
+                }
+            </p>
+            <div class="ejemplos ejemplo2">
+                <h4>Ejemplo: Clickea cada elemento</h4>
+                <input class="amarillo" value="sere amarillo"></input>
+                <input class="azul" value="sere azul"></input>
+                <input class="rojo" value="sere rojo"></input>
+            </div>
+        </section>
+        <section class="division tercera">
+            <h3 class="pseudo3">Elemento:nth-child</h3>
+            <p class="definicion">
+                La pseudo-clase <strong>nth-child</strong> permite seleccionar uno o dos elementos dependiendo de su
+                posición (o posiciones) dentro de un grupo de hermanos. <br>
+                <strong>odd</strong> selecciona los valores pares, como en este caso. <br>
+                <strong>even</strong> selecciona los elementos impares. <br>
+                <strong>An+B</strong> selecciona los elementos en funcion de un resultado. <br>
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo3 p:nth-child(odd){<br>
+                background-color: var(--fondodivisiones);<br>
+                width: 40vw;<br>
+                color: gray;<br>
+                font-weight: 500;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo3">
+                <h4>Ejemplo: </h4>
+                <p>Yo no</p>
+                <p>Yo Sí ;)</p>
+                <p>Yo no</p>
+                <p>Yo Sí ;)</p>
+                <p>Yo no</p>
+            </div>
+        </section>
+        <section class="division cuarta">
+            <h3 class="pseudo4">Elemento:active</h3>
+            <p class="definicion">La pseudo-clase <strong>:active</strong> de CSS se activa al dar click sostenido sobre
+                un elemento, comunmente se usa en enlaces < a> y en botones < input>. Indica que un elemento esta
+                        activado en su momento.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo4 #boton1:active{<br>
+                color:red;<br>
+                font-weight: 600;<br>
+                background: lightcyan;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo4">
+                <h4>Ejemplo: </h4>
+                <input id="boton1" type="button" value="Botón de prueba 1">
+                <input id="boton2" type="button" value="Botón de prueba 2">
+            </div>
+        </section>
+        <section class="division quinta">
+            <h3 class="pseudo5">Elemento:active</h3>
+            <p class="definicion">La pseudo-clase <strong>:read-only</strong> Nos permmite identificar cuando un
+                elemento
+                no es editable, es decir, por ejemplo, cuando en una entrada de texto, ya no permite ingresar texto,
+                sino
+                que queda de solo lectura.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo5 input:read-only{<br>
+                color: white;<br>
+                background-color: lightgray;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo5">
+                <h4>Ejemplo: </h4>
+                <input type="text" value="Será solo de lectura" readonly>
+                <input type="text" value="Se puede modificar">
+            </div>
+        </section>
+        <div class="division divti">
+            <h1 class="titulo">Pseudo-Elementos</h1>
+        </div>
+        <section class="division sexta">
+            <h3 class="pseudo6">Elemento::after</h3>
+            <p class="definicion"><strong>::after</strong> nos permite crear un pseudo-elemento al final de un
+                elemento seleccionado, por ejemplo nos permite añadir contenido para aclarar, o definir algun tipo de
+                caracteristica. Este contenido se agrega con la pripiedad content.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo6 p::after{ <br>
+                content: " -> Esta flechita va despues"; <br>
+                color: red; <br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo6">
+                <h4>Ejemplo: </h4>
+                <p>Este es un parrrafo de prueba para mostrar el uso de ::after</p>
+            </div>
+        </section>
+        <section class="division septima">
+            <h3 class="pseudo7">Elemento::before</h3>
+            <p class="definicion">
+                <strong>::before</strong> al igual que la etiqueta anterior, nos permite
+                crear un pseudo elemento dentro de la caja del elemento seleccionado, pero
+                esta vez es al principio de la caja, no al final.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo7 p::before{ <br>
+                content: " ' ;) ' "; <br>
+                color: green; <br>
+                font-weight: 600; <br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo7">
+                <h4>Ejemplo: </h4>
+                <p>En este párrafo se añadirá un elemento al principio.</p>
+            </div>
+        </section>
+        <section class="division">
+            <h3 class="pseudo8">Elemento::first-letter</h3>
+            <p class="definicion">
+                <strong>::first-letter</strong> nos permite aplicarle estilos a la primera letra de un elemento bloque y
+                que no sea precedido por ningún otro elemento.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo8 p::first-letter{ <br>
+                color: red; <br>
+                font-size: 120%; <br>
+                font-weight: 500;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo8">
+                <h4>Ejemplo: </h4>
+                <p>Este será mi primer parrafo de prueba</p>
+                <p>Este será mi segundo parrafo de prueba</p>
+                <p>Este será mi tercer parrafo de prueba</p>
+                <p>Este será mi cuarto parrafo de prueba</p>
+            </div>
+        </section>
+
+        <section class="division">
+            <h3 class="pseudo9">Elemento::first-line</h3>
+            <p class="definicion">
+                <strong>::first-line</strong> es similar a la anterior, pero en este caso nos permite aplicar estilos a
+                una línea completa de un elemento en bloque. La primera linea depende del ancho que se maneje dentro de
+                la aplicación.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo9 p::first-line{ <br>
+                background-color: white;<br>
+                color: red;<br>
+                font-size: 120%;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo9">
+                <h4>Ejemplo: </h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, rerum veniam! Non nostrum harum
+                    reprehenderit corporis numquam voluptatem porro! Ducimus reiciendis dolor ratione eveniet, est
+                    minima ipsa reprehenderit fugiat odio.</p>
+            </div>
+        </section>
+
+        <section class="division">
+            <h3 class="pseudo10">Elemento::marker</h3>
+            <p class="definicion">
+                <strong>::marker</strong> lo que nos permite es modificar el puntero de una lista, aplicarle estilos o
+                cambiarlo por completo.
+            </p>
+            <p class="definicion" style="font-weight: 600">
+                #ejemplo10 li::marker{<br>
+                    content: "X ";<br>
+                    color: green;<br>
+                    font-weight: 600;<br>
+                }
+            </p>
+            <div class="ejemplos" id="ejemplo10">
+                <h4>Ejemplo: </h4>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

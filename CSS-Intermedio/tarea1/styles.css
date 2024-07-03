@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkblue;
+}
+
+#cabecera{
+    position: relative;
+    width: 90vw;
+    height: 70vh;
+    background-image: url('imagenes/fondo\ loki.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 10vh auto;
+    overflow: hidden;
+}
+
+#cuadrado{
+    display: block;
+    position: absolute;
+    width: 85vh;
+    height: 130vh;
+    background-color: rgb(30, 30, 30);
+    transform: rotate(-20deg);
+    left: -50px;
+    top: -80px;
+} 
+
+#triangulo{
+    display: block;
+    position: absolute;
+    width: 92vw;
+    height: 15vh;
+    background-color: white;
+    bottom: -65px;
+    transform: rotate(-3deg);
+}
+
+#informacion{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30vw;
+    left: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#loki{
+    height: 10vh;
+    width: 20vw;
+    background-image: url('imagenes/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#informacion h1,p,button{
+    margin: 15px 0;
+}
+
+#informacion button{
+    color: white;
+    background-color: rgb(99, 204, 239);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}

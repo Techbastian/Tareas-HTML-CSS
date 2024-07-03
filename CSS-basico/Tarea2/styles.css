@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background: radial-gradient(gray, lightblue);
+}
+
+#info {
+    width: 70vw;
+    height: auto;
+    background-color: rgba(251, 251, 251, 0.5);
+    padding: 5vh;
+    border-radius: 2vh;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    text-align: justify;
+    margin: 3vh 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#palabra {
+    &::before {
+        color: #c62828;
+        content: "___ ";
+    }
+
+    &::after {
+        color: #2e7d32;
+        content: " *";
+    }
+}
+
+#texto {
+    &::after {
+        color: #2e7d32;
+        content: " : esto no lo he escrito en el texto.";
+    }
+}
+
+#revoloteado {
+    &:hover {
+        color: #6a1b9a;
+        background-color: antiquewhite;
+        padding: 1vh;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,91 @@
+main {
+    position: relative;
+    top: 70px;
+    background-color: gray;
+    color: lightgray;
+    width: 100vw;
+    padding: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.introduccion{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(201, 197, 197, 0.5);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.introduccion h1,h2{
+    margin: 10px 0;
+    display: block;
+}
+
+.introduccion p{
+    text-align: justify;
+    margin: 0 15px;
+}
+
+.introduccion ul,li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.introduccion a{
+    text-decoration: none;
+    color: gray;
+}
+
+#principal article{
+    width: 80vw;
+    margin: 15px auto;
+    text-align: center;
+    background-color: rgba(201, 197, 197, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.perfil{
+    background-color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.articulos p{
+    text-align: justify;
+}
+
+.articulos h3,h4{
+    font-weight: 600;
+    color: beige;
+    margin: 10px 0;
+}
+
+.matrimonio{
+    background-color: rgba(201, 197, 197, 0.5);
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.fotos{
+    width: 16vw;
+    height: 25vh;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

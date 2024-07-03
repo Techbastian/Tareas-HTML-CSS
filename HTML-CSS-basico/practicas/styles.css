@@ -1,0 +1,15 @@
+.container-fluid{
+  background-color: antiquewhite;
+  padding: 5px;
+}
+.row{
+  background-color: azure;
+  margin: 5px;
+}
+.menu{
+  background-color: bisque;
+}
+
+.content{
+  background-color: aqua;
+}

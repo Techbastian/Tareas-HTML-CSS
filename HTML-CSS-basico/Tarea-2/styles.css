@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(149, 164, 165, 0.5);
+}
+
+#fondo{
+    background: url(imagenes/ballena1.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorTitu{
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    width: 100%;
+}
+
+#fondo h1{
+    float: left;
+}
+
+.ContenedorNav{
+    width: 100%;
+    margin: auto;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#Cabeza{
+    color: white;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background: rgba(149, 164, 165, 0.5);
+    padding: 10px;
+}
+
+#Cabeza h1{
+    float: left;
+}
+
+.menu{
+    float: right;
+    display: block;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+    margin: 5px;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li ul{
+    height: -145px;
+    top: 0px;
+    padding: 10px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.menu a:hover{
+    background: rgb(251, 251, 251,0.5);;
+}
+
+#Principal {
+    background-color: rgb(251, 251, 251,0.5);
+    color: #ffffff;
+    position: relative;
+    top: 55%;
+    padding: 10px;
+}
+
+.ContenedorPrin{
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(149, 164, 165, 0.5);
+    margin-top: 0px;
+}
+
+.ContenedorPrin a{
+    color: #fff;
+    text-decoration: none;
+    width: 10%;
+    padding: 5px 10px;
+}
+
+#Contenido{
+    width: 100%;
+}
+
+.contenedorCont{
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedorCont h3, p, .ballenita{
+    margin: 15px;
+    padding: 5px;
+    background-color: rgb(251, 251, 251,0.5);
+}
+
+.contenedorCont img{
+    width: 500px;
+    border-radius: 30px;
+}
+
+.Ballena{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.Ballena article{
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.Ballena article img{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#choco{
+    text-align: center;
+}
+
+.caracteristicas{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.carac{
+    min-height: 150px;
+    min-width: 250px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+}
+
+.carac img{
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(99, 121, 141);
+    color: #fff;
+}
+
+.copy{
+    background: none;
+}
